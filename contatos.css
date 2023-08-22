@@ -1,0 +1,70 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-image: url(imagens/cerrado2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    color: #385555;
+}
+
+.list-wrapper {
+    background-color: #be8557;
+    width: 90%;
+    max-width: 500px;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .4)
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    border-bottom: 1px solid rgb(189, 167, 135);
+    padding: 16px;
+}
+
+.list-item__imagem img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.list-item__content {
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.list-item__name {
+    font-size: 24px;
+    color: #d3e2e2;
+    margin: 0;
+}
+
+.list-item__email {
+    margin: 5px 0 0;
+    color:#d3e2e2;
+}
+
+.list-item:hover {
+    background-color: #8f633f;
+}
